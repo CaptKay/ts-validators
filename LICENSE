@@ -1,0 +1,23 @@
+
+## `LICENSE`
+MIT (or your preferred license).
+
+---
+
+# 7) Acceptance checklist
+
+- [ ] `pnpm test` → all green (≥ basic coverage)  
+- [ ] `pnpm run build` → emits `dist/*.js` + `dist/*.d.ts`  
+- [ ] `npm pack` → tarball created  
+- [ ] Local consumer can install and import the package  
+- [ ] README explains install & usage
+
+---
+
+## Want stretch goals?
+- Add **`isNumberInRange(min,max)`** and **`isISODate`** rules.  
+- Add **`composeAll(objSchemaMap)`** that returns per-field results (not just first error).  
+- Ship a `browser` export condition as well as `import`.
+
+If anything errors while you set this up, paste the exact message and I’ll fix it line-by-line.
+::contentReference[oaicite:0]{index=0}

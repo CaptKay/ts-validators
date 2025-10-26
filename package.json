@@ -1,0 +1,40 @@
+{
+  "name": "@captkay/ts-validators",
+  "version": "0.1.1",
+  "description": "Tiny, type-safe validation library (email, phone, custom rules) for modern TypeScript.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "types": "./dist/index.d.ts",
+
+  "repository": { "type": "git", "url": "git+https://github.com/CaptKay/ts-validators.git" },
+  "bugs": { "url": "https://github.com/CaptKay/ts-validators/issues" },
+  "homepage": "https://github.com/CaptKay/ts-validators#readme",
+
+  "scripts": {
+    "check": "biome check src tests",
+    "fix": "biome check --write src tests",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+
+    "prepublishOnly": "pnpm run typecheck && pnpm run test && pnpm run build && pnpm run check",
+
+    "publish:gh": "npm publish --registry https://npm.pkg.github.com",
+    "publish:npm": "npm publish --access public --registry https://registry.npmjs.org"
+  },
+
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@types/node": "^24.9.1",
+    "@vitest/ui": "^3.2.4",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

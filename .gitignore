@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+pnpm-lock.yaml
+npm-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+coverage/
+.vitest/
+*.tgz
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment & system files
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sw?
+*.sublime-*
+*.code-workspace
+
+# GitHub / npm packaging
+.npmrc
+*.tgz
+
+# Logs
+logs/
+*.log
+
+# Misc
+tmp/
+temp/
