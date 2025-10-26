@@ -4,6 +4,18 @@
   "description": "Tiny, type-safe validation library (email, phone, custom rules) for modern TypeScript.",
   "type": "module",
   "license": "MIT",
+  "keywords": [
+  "typescript",
+  "validation",
+  "validators",
+  "type-safe",
+  "result",
+  "email",
+  "phone",
+  "schema",
+  "utility",
+  "captkay"
+],
   "sideEffects": false,
 
   "exports": {
